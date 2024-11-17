@@ -17,6 +17,7 @@ export default function FoodList(){
         <section>
                 {
                     foods.map((food, index) => {
+                        // if you change the key to 'food' it will print the foods in console.
                         return <p><FoodCard key={index} foodName={food}/></p>
                     })
                 }
